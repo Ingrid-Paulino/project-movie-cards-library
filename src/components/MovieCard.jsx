@@ -13,7 +13,7 @@ export default class MovieCard extends Component {
         <h4>{movie.title}</h4>
         <h5>{movie.subtitle}</h5>
         <p>{movie.storyline}</p>
-        <section className="rating">
+        <section>
           <Rating rating={ movie.rating } />
         </section>
       </section>

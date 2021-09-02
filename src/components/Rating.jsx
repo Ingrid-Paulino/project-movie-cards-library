@@ -4,20 +4,14 @@ import PropTypes from 'prop-types';
 
 export default class Rating extends Component {
   render() {
-    const { movie } = this.props;
-
+    const { rating } = this.props;
+    console.log(rating);
     return (
-      <p>{ movie.rating }</p>
+      <p className="rating">{ rating }</p>
     );
   }
 }
 
 Rating.propTypes = {
-  movie: PropTypes.shape({
-    rating: PropTypes.number,
-  }).isRequired,
-};
-
-Rating.default = {
-  movie: {},
+  rating: PropTypes.number.isRequired,
 };
